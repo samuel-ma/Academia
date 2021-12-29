@@ -1,0 +1,9 @@
+<resources >
+    <!-- Base application theme. -->
+    <style name="Theme.Academia" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#ffa600</item>
+        <item name="colorAccent">#272727</item>
+
+    </style>
+</resources>

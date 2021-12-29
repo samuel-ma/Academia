@@ -1,0 +1,34 @@
+<resources>
+
+    <string name="app_name">Academia</string>
+    <string name="logo_name">Find Your Way</string>
+    <string name="slogan_name">We guide you to find your destination</string>
+    <string name="powered_by">Created by SamiiE</string>
+    <string name="dashboard">User Dashboard</string>
+
+    //Titles
+    <string name="first_slide_title">Browse Popular Categories</string>
+    <string name="second_slide_title">Best Platform For Online Learning</string>
+    <string name="third_slide_title">Discover Useful Resources</string>
+    <string name="fourth_slide_title">Share Your Idea With Your Friends</string>
+
+    //Descriptions
+    <string name="first_slide_desc">You can search any place nearby or with-in specified city. We will display specific or all related searches</string>
+    <string name="second_slide_desc">We provide almost all the numbers of all departments and shops registered with us. You can perform a routine inspection on all your needs as well</string>
+    <string name="third_slide_desc">If you have a shop or something and want to be part of our growing industry the your welcome on board. Just add your place and will find a listing for it on our app</string>
+    <string name="fourth_slide_desc">We will handle everything for you. As you have the app in your pocket so you have no worries cause will be available 24/7 around the clock keeping you up to date</string>
+
+    //Buttons
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="lets_get_started">Lets Get Started</string>
+
+    //Login
+    <string name="Create_Account">Create Account</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="Login">Login</string>
+    <string name="Signup">Signup</string>
+    <string name="Enter_Username">Enter Username</string>
+    <string name="Enter_Password">Enter Password</string>
+
+</resources>
