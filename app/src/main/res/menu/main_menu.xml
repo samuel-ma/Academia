@@ -15,43 +15,12 @@
             android:icon="@drawable/search_icon"/>
 
         <item
-            android:id="@+id/nav_categories"
-            android:title="ALL CATEGORIES"
+            android:id="@+id/nav_subjects"
+            android:title="ALL Subjects"
             android:icon="@drawable/categories_icon"/>
 
 
     </group>
-
-    <item android:title="PROFILE">
-
-        <menu>
-
-            <group
-                android:checkableBehavior="single">
-
-                <item
-                    android:id="@+id/nav_login"
-                    android:title="@string/Login"
-                    android:icon="@drawable/login_icon"/>
-
-                <item
-                    android:id="@+id/nav_profile"
-                    android:title="PROFILE"
-                    android:icon="@drawable/profile"/>
-"/>
-
-                <item
-                    android:id="@+id/nav_logout"
-                    android:title="LOGOUT"
-                    android:icon="@drawable/logout_icon"/>
-
-
-            </group>
-
-
-        </menu>
-
-    </item>
 
     <item android:title="SHARE">
 
@@ -69,8 +38,6 @@
                     android:title="RATE US"
                     android:icon="@drawable/rate_icon"/>
                 "/>
->
-
 
             </group>
 
