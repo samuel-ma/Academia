@@ -1,118 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".main_pages.AllSubjects">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:context=".main_pages.AllSubjects">
 
-        <RelativeLayout
-            android:id="@+id/toolbar"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/colorPrimary"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/baloo"
+                    android:text="All Subjects"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
 
             <ImageView
-                android:id="@+id/back_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:src="@drawable/ic_back" />
+                android:layout_marginTop="10dp"
+                android:id="@+id/chemistry_category"
+                android:layout_width="410dp"
+                android:layout_height="180dp"
+                android:padding="10dp"
+                android:src="@drawable/chemistry"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:fontFamily="@font/baloo"
-                android:text="All Subjects"
-                android:textColor="@android:color/white"
-                android:textSize="24sp" />
+            <ImageView
+                android:id="@+id/biology_category"
+                android:layout_width="410dp"
+                android:layout_height="180dp"
+                android:padding="10dp"
+                android:src="@drawable/biologyy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/chemistry_category" />
 
-        </RelativeLayout>
+            <ImageView
+                android:id="@+id/physics_category"
+                android:layout_width="410dp"
+                android:layout_height="180dp"
+                android:padding="10dp"
+                android:src="@drawable/physics"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/biology_category" />
 
-        <ImageView
-            android:layout_marginTop="10dp"
-            android:id="@+id/chemistry_category"
-            android:layout_width="410dp"
-            android:layout_height="180dp"
-            android:padding="10dp"
-            android:src="@drawable/chemistry"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+            <ImageView
+                android:id="@+id/english_category"
+                android:layout_width="410dp"
+                android:layout_height="180dp"
+                android:padding="10dp"
+                android:src="@drawable/english"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/physics_category" />
 
-        <ImageView
-            android:id="@+id/biology_category"
-            android:layout_width="410dp"
-            android:layout_height="180dp"
-            android:padding="10dp"
-            android:src="@drawable/biologyy"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/chemistry_category" />
+            <ImageView
+                android:id="@+id/philosophy_category"
+                android:layout_width="410dp"
+                android:layout_height="180dp"
+                android:padding="10dp"
+                android:src="@drawable/philosophy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/english_category" />
 
-        <ImageView
-            android:id="@+id/physics_category"
-            android:layout_width="410dp"
-            android:layout_height="180dp"
-            android:padding="10dp"
-            android:src="@drawable/physics"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/biology_category" />
+            <ImageView
+                android:id="@+id/history_category"
+                android:layout_width="410dp"
+                android:layout_height="180dp"
+                android:padding="10dp"
+                android:src="@drawable/history"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/philosophy_category" />
 
-        <ImageView
-            android:id="@+id/english_category"
-            android:layout_width="410dp"
-            android:layout_height="180dp"
-            android:padding="10dp"
-            android:src="@drawable/english"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/physics_category" />
+            <ImageView
+                android:id="@+id/geography_category"
+                android:layout_width="410dp"
+                android:layout_height="180dp"
+                android:padding="10dp"
+                android:src="@drawable/geography"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/history_category" />
 
-        <ImageView
-            android:id="@+id/philosophy_category"
-            android:layout_width="410dp"
-            android:layout_height="180dp"
-            android:padding="10dp"
-            android:src="@drawable/philosophy"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/english_category" />
+        </LinearLayout>
 
-        <ImageView
-            android:id="@+id/history_category"
-            android:layout_width="410dp"
-            android:layout_height="180dp"
-            android:padding="10dp"
-            android:src="@drawable/history"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/philosophy_category" />
+    </ScrollView>
 
-        <ImageView
-            android:id="@+id/geography_category"
-            android:layout_width="410dp"
-            android:layout_height="180dp"
-            android:padding="10dp"
-            android:src="@drawable/geography"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/history_category" />
-
-    </LinearLayout>
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

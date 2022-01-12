@@ -7,6 +7,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -17,18 +18,23 @@ import android.widget.LinearLayout;
 
 import com.google.android.material.navigation.NavigationView;
 import com.samuelmajok.academia.R;
+import com.samuelmajok.academia.adapter.homeAdapter.CategoriesAdapter;
+import com.samuelmajok.academia.adapter.homeAdapter.CategoriesHelperClass;
 import com.samuelmajok.academia.adapter.homeAdapter.FeaturedAdapter;
 import com.samuelmajok.academia.adapter.homeAdapter.featuredHelperClass;
+import com.samuelmajok.academia.onboarding_pages.LoginActivity;
 
 import java.util.ArrayList;
 
 public class DashboardActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+    RecyclerView.Adapter adapter2;
+    RecyclerView categoriesRecycler;
     RecyclerView featuredRecycler;
     RecyclerView.Adapter adapter;
 
     static final float END_SCALE = 0.7f;
-    ImageView hamburgerMenu;
+    ImageView hamburgerMenu, sign_in_button;
     LinearLayout contentView;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -43,6 +49,22 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
 
         contentView = findViewById(R.id.content);
 
+        sign_in_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        categoriesRecycler = findViewById(R.id.categories_recycler);
+
+        //categories recyclerView
+
+        categoriesRecycler();
+
+        //featured recyclerView
         featuredRecycler();
 
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -53,6 +75,8 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
 
         navigationDrawer();
     }
+
+
 
     //NavigationView
     private void navigationDrawer() {
@@ -121,14 +145,14 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
             super.onBackPressed();
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
 
             case R.id.nav_subjects:
-                Intent intent = new Intent(getApplicationContext(), AllSubjects.class);
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), AllSubjects.class));
                 break;
         }
         return true;
@@ -155,6 +179,28 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         adapter = new FeaturedAdapter(featuredLocations);
 
         featuredRecycler.setAdapter(adapter);
+
+    }
+
+    //categories recyclerView methods
+    private void categoriesRecycler() {
+
+        categoriesRecycler.setHasFixedSize(true);
+
+        categoriesRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+
+
+        ArrayList<CategoriesHelperClass> categoriesLocations = new ArrayList<>();
+
+        categoriesLocations.add(new CategoriesHelperClass(R.drawable.mushrooms, "THE LITTLE MUSHROOMS", "The story of how little shrooms grew on the cost of Lake Albert a very valuable medicine."));
+        categoriesLocations.add(new CategoriesHelperClass(R.drawable.chick, "THE LOST CHICK", "The story of how little shrooms grew on the cost of Lake Albert a very valuable medicine."));
+        categoriesLocations.add(new CategoriesHelperClass(R.drawable.tree, "THE ORK TREE", "The story of how little shrooms grew on the cost of Lake Albert a very valuable medicine."));
+        categoriesLocations.add(new CategoriesHelperClass(R.drawable.wizard, "THE BRAVE WIZARD", "The story of how little shrooms grew on the cost of Lake Albert a very valuable medicine."));
+        categoriesLocations.add(new CategoriesHelperClass(R.drawable.samurai, "THE MIGHTY WARRIOR", "The story of how little shrooms grew on the cost of Lake Albert a very valuable medicine."));
+
+        adapter2 = new CategoriesAdapter(categoriesLocations);
+
+        categoriesRecycler.setAdapter(adapter2);
 
     }
 

@@ -29,15 +29,15 @@
             <group>
 
                 <item
-                    android:id="@+id/nav_share"
-                    android:title="SHARE"
-                    android:icon="@drawable/share_icon"/>
-
-                <item
                     android:id="@+id/nav_rate"
                     android:title="RATE US"
                     android:icon="@drawable/rate_icon"/>
                 "/>
+
+                <item
+                    android:id="@+id/nav_share"
+                    android:title="SHARE"
+                    android:icon="@drawable/share_icon"/>
 
             </group>
 

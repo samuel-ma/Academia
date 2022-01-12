@@ -8,42 +8,42 @@
     app:cardElevation="8dp">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/featured_image"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:src="@drawable/book_7"
-            android:scaleType="centerCrop"/>
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/book_7" />
 
         <TextView
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:id="@+id/featured_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:fontFamily="@font/baloo"
             android:text="Beauty and the beast"
             android:textSize="20sp" />
 
         <RatingBar
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:rating="4.0"
             style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <TextView
+            android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
+            android:rating="4.0" />
+
+        <TextView
             android:id="@+id/featured_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Our editors and contributors have curated the best books of the year"/>
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Our editors and contributors have curated the best books of the year" />
 
     </LinearLayout>
 

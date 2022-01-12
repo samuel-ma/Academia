@@ -42,6 +42,7 @@
                 android:src="@drawable/academia" />
 
             <ImageView
+                android:id="@+id/sign_in_button"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_alignParentRight="true"
@@ -130,15 +131,15 @@
                         android:orientation="vertical">
 
                         <RelativeLayout
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
                             android:layout_margin="10dp"
                             android:background="@drawable/card1"
                             android:elevation="8dp">
 
                             <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
                                 android:layout_centerInParent="true"
                                 android:src="@drawable/math" />
 
@@ -159,15 +160,16 @@
                         android:orientation="vertical">
 
                         <RelativeLayout
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
                             android:layout_margin="10dp"
                             android:background="@drawable/card2"
                             android:elevation="8dp">
 
                             <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
+
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
                                 android:layout_centerInParent="true"
                                 android:src="@drawable/react" />
 
@@ -188,15 +190,15 @@
                         android:orientation="vertical">
 
                         <RelativeLayout
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
                             android:layout_margin="10dp"
                             android:background="@drawable/card3"
                             android:elevation="8dp">
 
                             <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
                                 android:layout_centerInParent="true"
                                 android:src="@drawable/dna" />
 
@@ -217,15 +219,15 @@
                         android:orientation="vertical">
 
                         <RelativeLayout
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
                             android:layout_margin="10dp"
                             android:background="@drawable/card4"
                             android:elevation="8dp">
 
                             <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
                                 android:layout_centerInParent="true"
                                 android:src="@drawable/homework" />
 
@@ -248,8 +250,8 @@
                     android:layout_height="300dp"
                     android:layout_margin="10dp"
                     android:layout_marginTop="30dp"
-                    android:orientation="vertical"
-                    android:padding="20sp">
+                    android:padding="10dp"
+                    android:orientation="vertical">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -258,6 +260,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
                             android:fontFamily="sans-serif-black"
                             android:text="Recommendations"
                             android:textColor="@color/colorPrimary"
@@ -283,9 +286,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
                     android:layout_margin="10dp"
+                    android:padding="10dp"
                     android:layout_marginTop="30dp"
-                    android:orientation="vertical"
-                    android:padding="20sp">
+                    android:orientation="vertical">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -294,6 +297,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
                             android:fontFamily="sans-serif-black"
                             android:text="CATEGORIES"
                             android:textColor="@color/colorPrimary"
@@ -309,6 +313,7 @@
                     </RelativeLayout>
 
                     <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/categories_recycler"
                         android:layout_width="match_parent"
                         android:layout_height="300dp" />
 

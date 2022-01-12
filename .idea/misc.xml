@@ -9,14 +9,15 @@
         <entry key="..\:/Academia/app/src/main/res/drawable/card4.xml" value="0.2203125" />
         <entry key="..\:/Academia/app/src/main/res/drawable/menu_icon.xml" value="0.2203125" />
         <entry key="..\:/Academia/app/src/main/res/drawable/profile.xml" value="0.1" />
-        <entry key="..\:/Academia/app/src/main/res/layout/activity_all_subjects.xml" value="0.1" />
+        <entry key="..\:/Academia/app/src/main/res/layout/activity_all_subjects.xml" value="0.22" />
         <entry key="..\:/Academia/app/src/main/res/layout/activity_books.xml" value="0.22" />
-        <entry key="..\:/Academia/app/src/main/res/layout/activity_dashboard.xml" value="0.22" />
+        <entry key="..\:/Academia/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
         <entry key="..\:/Academia/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Academia/app/src/main/res/layout/activity_on_boarding.xml" value="0.2" />
         <entry key="..\:/Academia/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
         <entry key="..\:/Academia/app/src/main/res/layout/all_categories.xml" value="0.22" />
         <entry key="..\:/Academia/app/src/main/res/layout/book_description.xml" value="0.22" />
+        <entry key="..\:/Academia/app/src/main/res/layout/category_card_design.xml" value="0.33" />
         <entry key="..\:/Academia/app/src/main/res/layout/featured_card_design.xml" value="0.25" />
         <entry key="..\:/Academia/app/src/main/res/layout/menu_header.xml" value="0.33" />
         <entry key="..\:/Academia/app/src/main/res/layout/most_viewed_row_items.xml" value="0.20416666666666666" />
