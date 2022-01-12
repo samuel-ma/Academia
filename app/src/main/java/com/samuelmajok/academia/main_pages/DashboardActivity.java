@@ -34,7 +34,7 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
     RecyclerView.Adapter adapter;
 
     static final float END_SCALE = 0.7f;
-    ImageView hamburgerMenu, sign_in_button;
+    ImageView hamburgerMenu;
     LinearLayout contentView;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -49,14 +49,6 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
 
         contentView = findViewById(R.id.content);
 
-        sign_in_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         categoriesRecycler = findViewById(R.id.categories_recycler);
 
@@ -75,8 +67,6 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
 
         navigationDrawer();
     }
-
-
 
     //NavigationView
     private void navigationDrawer() {
