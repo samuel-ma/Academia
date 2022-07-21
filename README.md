@@ -3,11 +3,11 @@
 
 <h2>TOOLS USED</h2>
 <ul>
-    <li>Java<li>
-    <li>Android Studio<li>
-    <li>Adobe XD<li>
-    <li>Figma<li>
-    <li>Lottiefiles<li>
+    <li>Java<li/>
+    <li>Android Studio<li/>
+    <li>Adobe XD<li/>
+    <li>Figma<li/>
+    <li>Lottiefiles<li/>
 </ul>
 
 ```java
