@@ -16,7 +16,7 @@
 </ul>
 
 ```java
-<!-- NavigationView -->
+<!-- NavigationView Snippet -->
 
     private void navigationDrawer() {
 
