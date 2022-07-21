@@ -1,17 +1,22 @@
 <h1>Academia</h1>
 <h3>An E-Learning Platform</h3>
 
+<h2>Language Used</h2>
+<ul>
+</ul>
+
 <h2>TOOLS USED</h2>
 <ul>
-    <li>Java<li/>
-    <li>Android Studio<li/>
-    <li>Adobe XD<li/>
-    <li>Figma<li/>
-    <li>Lottiefiles<li/>
+    <li>Java
+    <li>Android Studio
+    <li>Adobe XD
+    <li>Figma
+    <li>Lottiefiles
 </ul>
 
 ```java
 <!-- NavigationView -->
+
     private void navigationDrawer() {
 
         navigationView.bringToFront();
