@@ -1,9 +1,13 @@
 <h1>Academia</h1>
 <h3>An E-Learning Platform</h3>
 
-<h1>TOOLS USED</h1>
+<h2>TOOLS USED</h2>
 <ul>
     <li>Java<li>
+    <li>Android Studio<li>
+    <li>Adobe XD<li>
+    <li>Figma<li>
+    <li>Lottiefiles<li>
 </ul>
 
 ```java
