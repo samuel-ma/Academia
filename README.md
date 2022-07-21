@@ -1,5 +1,5 @@
 <h1>Academia</h1>
-<h3>An E-Learning Platform</h3>
+<p>An E-Learning Platform</p>
 
 <h2>Language Used</h2>
 <ul>
