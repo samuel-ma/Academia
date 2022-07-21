@@ -1,6 +1,11 @@
 <h1>Academia</h1>
 <h3>An E-Learning Platform</h3>
-<hr/>
+
+<h1>TOOLS USED</h1>
+<ul>
+    <li>Java<li>
+</ul>
+
 ```java
 <!-- NavigationView -->
     private void navigationDrawer() {
