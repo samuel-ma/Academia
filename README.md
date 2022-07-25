@@ -1,5 +1,4 @@
 <h1>Academia</h1>
-<p>An E-Learning Platform</p>
 
 <h2>Language Used</h2>
 <ul>
