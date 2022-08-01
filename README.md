@@ -15,6 +15,9 @@
     <li>Lottiefiles
 </ul>
 
+<h2>Icons Used</h2>
+<ul>
+</ul>
 ```java
 <!-- NavigationView Snippet -->
 
