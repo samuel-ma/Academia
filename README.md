@@ -19,7 +19,7 @@
 <ul>
     <li>Flaticon
     <li>Freeicons
-    <li>
+    <li>Icon8
 </ul>
 
 ```java
