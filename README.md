@@ -17,6 +17,9 @@
 
 <h2>Icons Used</h2>
 <ul>
+    <li>Flaticon
+    <li>Freeicons
+    <li>
 </ul>
 
 ```java
