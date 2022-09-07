@@ -15,7 +15,7 @@
     <li>Lottiefiles
 </ul>
 
-<h2>Icons Used</h2>
+<h2>ICONS USED</h2>
 <ul>
     <li>Flaticon
     <li>Freeicons
