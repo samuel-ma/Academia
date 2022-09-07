@@ -22,8 +22,8 @@
     <li>Icon8
 </ul>
 
-```java
 # NavigationView Snippet
+```java
 
     private void navigationDrawer() {
 
