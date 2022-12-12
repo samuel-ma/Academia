@@ -15,7 +15,6 @@
 
 <h2>TOOLS USED</h2>
 <ul>
-    <li>Java
     <li>Android Studio
     <li>Adobe XD
     <li>Figma
