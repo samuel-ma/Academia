@@ -89,4 +89,3 @@ public class SliderAdapter extends PagerAdapter {
 
 
 
-
